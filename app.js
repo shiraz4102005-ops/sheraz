@@ -31,7 +31,7 @@ function startSlider() {
     index++;
     if (index >= images.length) index = 0;
     slider.src = images[index];
-  }, 2000);
+  }, 3000);
 }
 
 /* NO button move */
@@ -90,3 +90,4 @@ messageBtn.addEventListener("click", () => {
 function closeMessage() {
   fullMessage.style.display = "none";
 }
+
