@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ffd6e7, #ffeef5);
+  overflow: hidden;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+}
+
+h1 {
+  color: #ff2e63;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 40px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+#yes {
+  background: linear-gradient(45deg, #ff2e63, #ff5e8a);
+  color: white;
+  box-shadow: 0 5px 20px rgba(255, 0, 80, 0.5);
+}
+
+#yes:hover {
+  transform: scale(1.1);
+}
+
+#no {
+  background: #eee;
+  color: #333;
+  position: absolute;
+}
+
+/* success text */
+.success {
+  display: none;
+  font-size: 22px;
+  color: #ff2e63;
+  margin-top: 20px;
+}
+
+/* image */
+.image-container {
+  display: none;
+  margin-top: 15px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+/* floating hearts */
+.heart {
+  position: absolute;
+  color: #ff2e63;
+  font-size: 20px;
+  animation: float 5s linear infinite;
+}
+
+.image-container img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+
+#fullMessage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ff9ec4, #ffc3dc);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  z-index: 999;
+}
+
+.message-content {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+
+.message-content h2 {
+  color: #ff2e63;
+  margin-bottom: 20px;
+}
+
+.message-content p {
+  color: #444;
+  line-height: 1.6;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-800px) scale(1.8);
+    opacity: 0;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+
+  .card {
+    padding: 25px 15px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  .success {
+    font-size: 18px;
+  }
+
+  .image-container img {
+    height: 180px;
+  }
+
+  .message-content {
+    padding: 20px 15px;
+  }
+
+  .message-content h2 {
+    font-size: 20px;
+  }
+
+  .message-content p {
+    font-size: 14px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .card {
+    width: 95%;
+  }
+}
+

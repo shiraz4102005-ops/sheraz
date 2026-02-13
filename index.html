@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Be My Valentine ❤️</title>
+</head>
+
+<body>
+    <div id="fullMessage">
+        <div class="message-content">
+            <h2>💌 From Sheraz to Naghma</h2>
+            <p>
+                My dearest Naghma,<br><br>
+
+                From the moment you came into my life, everything felt softer,
+                brighter, and more beautiful. Your smile is my favorite sight,
+                your voice is my favorite sound, and your happiness is my biggest wish.<br><br>
+
+                Every heartbeat of mine whispers your name.
+                You are not just my Valentine… you are my peace,
+                my comfort, and my forever dream.<br><br>
+
+                No matter where life takes us, I promise to hold your hand,
+                protect your heart, and love you more with every passing day.<br><br>
+
+                Forever yours,<br>
+                <b>Sheraz ❤️</b>
+            </p>
+
+            <button onclick="closeMessage()" class="btn">Close 💕</button>
+        </div>
+    </div>
+
+    <div class="card">
+        <h1 class="heading">Will you be my Valentine? 💖</h1>
+        <p class="msg">Choose wisely... 😏</p>
+
+        <button id="yes" class="btn">YES! 💕</button>
+        <button id="no" class="btn">NO 😢</button>
+
+        <div class="success" id="success">
+            I LOVE YOU NAGHMA JAN !!! ❤️<br>
+            You are mine now 😍
+        </div>
+
+        <div class="image-container" id="imageBox">
+            <img id="slider" src="img1.png" width="100%" />
+        </div>
+
+        <!-- Background Music -->
+        <audio id="bgMusic" loop>
+            <source src="romantic.mp3" type="audio/mp3">
+        </audio>
+
+        <button id="messageBtn" class="btn" style="display:none; margin-top:15px;">
+            💌 Read My Message
+        </button>
+
+
+        <h6 style="opacity: 0.4; margin:5px ;">Sheraz Baloch!</h6>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
